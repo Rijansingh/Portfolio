@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+        <nav>
+        <img src="/img/logo.png" class="logo">
+        <ul>
+    
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">resume</a></li> 
+        <li><a href="#contact">contact</a></li>
+        </ul>
+       
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I am <span>Rijan singh</span><br> Kathmandu,Nepal</h1>
+        </div>
+        
+        </div>
+
+        </div>
+         
+<!-- ------------about-------- -->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="img/img2 (1).png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>Hi,  my name is Rijan-singh.<br>
+                            In the realm of aspiring technologists, Rijan Singh stands as a promising figure, driven by a passion for innovation and fueled by a relentless quest for knowledge. At the age of 20, Rijan's journey in the world of technology is already marked by determination and a thirst for excellence.
+
+                            Born with a natural curiosity for how things work, Rijan's fascination with computers began at a young age. Growing up in a digital age, he found himself drawn to the endless possibilities that technology offered. This curiosity led him to pursue a Bachelor's degree in Information Technology (BIT), currently in his 3rd semester, where he is laying the groundwork for a successful career in the field.
+                            
+                            One of Rijan's notable strengths lies in his proficiency in fundamental web development languages such as HTML, CSS, and JavaScript. Despite being in the early stages of his educational journey, his grasp of these languages showcases both his aptitude for learning and his dedication to mastering the tools of his trade. His ability to translate concepts into code reflects a keen analytical mind and a creative approach to problem-solving.
+                            
+                            Beyond the confines of the classroom, Rijan is not one to rest on his laurels. He actively seeks out opportunities to apply his burgeoning skills, whether through personal projects or collaborative endeavors. His willingness to experiment and push the boundaries of his knowledge sets him apart as a proactive learner, unafraid to tackle challenges head-on.
+                        </p>
+
+
+                        <div class="tab-tiltles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing web/App interfaces</li>
+                                <li><span>Web Devlopment</span><br>Designing web/App interfaces</li>
+                                <li><span>App devlopment</span><br>Designing web/App interfaces</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2022 - currently</span><br>Designing web/App training  at Texas college</li>
+                                <li><span>2018-2020</span><br>Basic knowledge in computers program</li>
+                                <li><span>2015-2017</span><br>Interest in computer and its program</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022</span><br>Join in Texas college in IT and management</li>
+                                <li><span>2020</span><br>Shree bagawati secondary school/college</li>
+                                <li><span>2018</span><br>Shree bagawati secondary school</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablinks of tablinks){
+                    tablinks.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+            
+        </script>
+
+
+
+      <!-- ------------------resume-----------   -->
+      <section id="resume">
+        <h1>Resume</h1>
+        <section id="professional-summary">
+            <h2>Professional Summary</h2>
+            <p>This is where you can write your professional summary.</p>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <p>This is where you can list your education details.</p>
+        </section>
+        <section id="work-experience">
+            <h2>Work Experience</h2>
+            <p>This is where you can list your work experience.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>This is where you can list your skills.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects or Portfolio</h2>
+            <p>This is where you can showcase your projects or portfolio.</p>
+        </section>
+        <section id="achievements">
+            <h2>Achievements and Awards</h2>
+            <p>This is where you can list your achievements and awards.</p>
+        </section>
+        <section id="references">
+            <h2>References</h2>
+            <p>This is where you can provide references.</p>
+        </section>
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <p>This is where you can provide your contact information.</p>
+        </section>
+    </section>
+
+
+
+
+      <section id="add-edit-resume">
+        <h1>Add / Edit Resume</h1>
+        <form id="resume-form">
+            <h2>Add New Work Experience</h2>
+            <label for="job-title">Job Title:</label>
+            <input type="text" id="job-title" name="job-title" required>
+            <label for="company-name">Company Name:</label>
+            <input type="text" id="company-name" name="company-name" required>
+            <label for="dates">Dates of Employment:</label>
+            <input type="text" id="dates" name="dates" placeholder="MM/YYYY - MM/YYYY" required>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+            <label for="responsibilities">Responsibilities:</label>
+            <textarea id="responsibilities" name="responsibilities" required></textarea>
+            <button type="submit">Add Work Experience</button>
+        </form>
+        <form id="skills-form">
+            <h2>Add New Skills</h2>
+            <label for="technical-skills">Technical Skills:</label>
+            <input type="text" id="technical-skills" name="technical-skills" required>
+            <label for="soft-skills">Soft Skills:</label>
+            <input type="text" id="soft-skills" name="soft-skills" required>
+            <label for="language-proficiency">Language Proficiency:</label>
+            <input type="text" id="language-proficiency" name="language-proficiency" required>
+            <label for="certifications">Certifications:</label>
+            <input type="text" id="certifications" name="certifications" required>
+            <label for="creative-skills">Creative Skills:</label>
+            <input type="text" id="creative-skills" name="creative-skills" required>
+            <button type="submit">Add Skills</button>
+        </form>
+    </section>
+    
+<!-- ------------------contact--------------- -->
+<section id="contact">
+    <h1>Contact Us</h1>
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="response"></div>
+</section>
+
+
+
+<footer>
+    <ul class="social-links">
+        <li><a href="https://www.facebook.com">Facebook</a></li>
+        <li><a href="https://www.instagram.com">Instagram</a></li>
+        <li><a href="https://www.youtube.com">Youtube</a></li>
+        <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+    </ul>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
